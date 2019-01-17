@@ -1,0 +1,272 @@
+.box {
+  min-width: 1200px;
+  overflow: hidden;
+}
+.public-container {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+  /*background: gray;*/
+}
+
+/* 公共头部 */
+.public-header {
+  width: auto;
+  height:104px;
+  background-color:rgba(255,255,255,1);
+  border-bottom:5px solid rgba(231,214,178,1);
+  position: relative;
+  z-index: 9;
+}
+.public-header .header-logo {
+  float: left;
+  height: 62px;
+  width: 212px;
+  z-index: 9;
+  margin-top: 20px;
+}
+.public-header .header-logo a {
+  height: 62px;
+  width: 212px;
+  background: url("../img/index-header-logo.png") no-repeat;
+}
+.public-header .header-nav {
+  float: right;
+  width: 840px;
+  margin-top: 36px;
+}
+.public-header .header-nav li {
+  float: left;
+  width: 120px;
+  height: 30px;
+  border-right: 1px solid rgba(220,215,218,1);
+}
+.public-header .header-nav a {
+  width:120px;
+  height:30px;
+  font-size:18px;
+  font-family:SimSun;
+  font-weight:400;
+  color:rgba(101,80,35,1);
+  line-height:34px;
+  text-align: center;
+  text-decoration: none;
+}
+.public-header .header-nav a:hover {
+  color:rgba(202,101,152,1);
+}
+.public-header .unopen-title {
+  color:rgba(173,173,173,1);
+  line-height:16px; 
+  margin-top:10px;
+}
+.public-header .unopen{
+  width:77px;
+  height:15px;
+  font-size:16px;
+  font-family:SimSun;
+  font-weight:400;
+  color:rgba(173,173,173,1);
+  line-height:16px;
+}
+
+/*公共底部*/
+.public-footer {
+  width: auto;
+  height: 227px;
+  margin-top: 36px;
+  background: #3b3b3b;
+}
+.public-footer .footer-logo {
+  float: left;
+  width: 112px;
+  height: 115px;
+  margin-top: 54px;
+  margin-left: 256px;
+  background: url("../img/index-footer-logo.png") no-repeat;
+}
+.public-footer .footer-text {
+  float: left;
+  text-align: left;
+  font-size:14px;
+  font-family:FZLTXHJW--GB1-0;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  width: 800px;
+  height: 160px;
+  margin-top: 60px;
+  margin-left:30px;
+  line-height: 15px;
+}
+
+
+.popover {
+	margin-left:180px;
+  max-width: 420px;
+  padding: 0px;
+}
+.popover-content {
+	width:420px;
+  height: 160px;
+  border-top:30px;
+  border-bottom: 54px;
+  border-left:210px;
+  border-right:210px;
+  border-style: solid;
+  padding: 0px;
+  -webkit-border-image:url('../img/index/skilltip.png') 30 210 54 210 repeat repeat; /* Safari 5 */
+  -o-border-image:url('../img/index/skilltip.png') 30 210 54 210 repeat repeat; /* Opera */  
+  border-image:url('../img/index/skilltip.png') 30 210 54 210 repeat repeat;
+	text-align: center;
+}
+.popover .arrow {
+	display: none;
+}
+/* pop技能样式 */
+.popover-content .skill-icon {
+  width:60px; 
+  height:60px;
+  margin-left:30px; 
+  margin-top:20px; 
+  float: left;
+}
+.popover-content .skill-name {
+  margin-left:105px; 
+  margin-top:20px; 
+  text-align: left;
+  height:16px;
+  font-size:16px;
+  font-family:SourceHanSansCN-Regular;
+  font-weight:400;
+  color:rgba(148,142,146,1);
+  line-height:24px;
+}
+.popover-content .skill-desc{
+  margin-left:105px; 
+  margin-top:14px; 
+  width: 294px; 
+  text-align: left;
+  font-size:14px;
+  font-family:SourceHanSansCN-Regular;
+  font-weight:400;
+  color:rgba(148,142,146,1);
+  line-height:18px;
+}
+
+/* 血统详情模态框 */
+.modal-content{
+  border:none;
+}
+.blood-content {
+	width: 1200px;
+	height:720px;
+	background:url('../img/pictures/blooddetail.jpg')no-repeat;
+}
+.blood-content .circularmask {
+    width: 110px;
+    height: 102px;
+    border: 0px solid rgba(0, 0, 0, .35);
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 68px;
+    margin-top: 46px;
+    overflow: hidden;
+}
+.blood-content .bloodframe {
+	position: absolute;
+	margin-left: 60px;
+	margin-top: 36px;
+	width: 132px;
+	height: 120px;
+	background: url('../img/pictures/bloodframe.png');
+	overflow: hidden;
+}
+.blood-content .bloodPopTitle {
+	position: absolute;
+  margin-left: 210px;
+  margin-top:44px;
+	font-size:30px;
+	font-family:SimSun;
+	font-weight:bold;
+	color:rgba(101,80,35,1);
+}
+.blood-content .bloodPopDesc {
+	position: absolute;
+	width: 665px;
+	margin-left: 210px;
+	margin-top: 94px;
+	font-size:15px;
+	text-align: left;
+	font-family:SourceHanSansCN-Regular;
+	font-weight:400;
+	color:rgba(148,142,146,1);
+	line-height:24px;
+}
+.blood-content .logo {
+	float:right;
+	margin-top:30px;
+	width:262px;
+	height:62px;
+	background: url('../img/index/logo.png') no-repeat;
+}
+
+
+
+/* 分页样式 */
+.pagination-outer{ text-align: center; }
+.pagination{
+  display: inline-flex;
+	position: relative;
+	border: 1px solid rgba(217,217,217,1);
+	border-right: none;
+}
+.pagination li {
+	width: 56px;
+	height: 56px;
+	border:none;
+	border-right: 1px solid rgba(217,217,217,1);
+	padding-top:1px;
+	padding-left:1px;
+}
+.pagination li a.page-link{
+  width: 54px;
+  height: 54px;
+  background-color: transparent;
+  padding: 1px;
+  color:rgba(192,177,123,1);
+  font-size:16px;
+  font-family:Adobe Heiti Std R;
+  font-weight:normal;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  display:flex;
+  justify-content:center;
+  align-items:center; 
+}
+.pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover {
+  width: 56px;
+  height: 56px;
+  margin-top:-1px;
+  color: rgba(192,177,123,1);
+  cursor: not-allowed;
+  display:flex;
+  justify-content:center;
+  align-items:center; 
+  border: none;
+  border-right: 1px solid rgba(217,217,217,1);
+}
+.pagination li a.page-link:hover{
+	color:rgba(192,177,123,1);
+	font-size:16px;
+	font-family:Adobe Heiti Std R;
+	font-weight:normal;
+  background: rgba(245,245,245,1);
+}
+.pagination .active span{
+  width: 56px;
+  height: 56px;
+  margin-top:-1px;
+  color: #fff;
+  background-color: rgba(192,177,123,1);
+}

@@ -1,0 +1,210 @@
+/*头部*/
+.public-header .header-nav a.news {
+  background: url("../img/header/checked/news.png") 30px 20px no-repeat,
+              url('../img/header/choosedline.jpg') 10px 85px no-repeat;
+}
+
+/*头图区*/
+.news-banner-bg {
+  	position: relative;
+  	height: 686px;
+	width: 1920px;
+	width:100%;
+	margin-top:-140px;
+	background: url('../img/newsimg/news-banner-bg.jpg') no-repeat;
+	background-position: 50% 50%;
+  	z-index: 1;
+}
+
+/*内容区*/
+.news-content-logo {
+	position: relative;
+	z-index: 9;
+	margin-top: -194px;
+	width: 1200px;
+	height: 116px;
+	background: rgba(255,249,241,1);
+	border-top: 6px solid rgba(232,225,199,1);
+	border-bottom: 1px solid rgba(232,225,199,1);
+}
+.news-content-nav {
+	margin-top: 42px;
+	margin-left: 366px;
+	width:468px;
+	height:62px;
+	position: relative;
+	z-index: 10;
+	border:2px solid rgba(192,177,123,1);
+}
+.news-content-nav ul {
+	float: left;
+	margin-top: 4px;
+}
+.news-content-nav li {
+	width: 148px;
+	height: 50px;
+	float: left;
+	margin-left: 5px;
+	text-align: center;
+}
+.news-content-nav li a{
+	text-decoration: none;
+}
+.news-content-nav li:hover {
+	background: rgba(192,177,123,1);
+}
+.news-content-list {
+	margin-top: 40px;
+}
+.newslist {
+	width:1200px;
+	height:172px;
+	position: relative;
+	border-bottom: 1px solid rgba(240,240,240,1);
+	border-radius:1px;
+	margin: 0px 42px;
+}
+.newslist .tag {
+	width:68px;
+	height:24px;
+	float:left;
+	margin-left:144px;
+	margin-top:62px;
+	padding-left: 15px;
+	background:rgba(172,206,213,1);
+	border-radius:12px;
+	font-size:18px;
+	color:rgba(255,255,255,1);
+}
+.newslist .time {
+	float: left;
+	margin-left:30px;
+	margin-top: 58px;
+	font-size:18px;
+	font-family:SourceHanSansCN-Regular;
+	font-weight:400;
+	color:rgba(43,43,43,1);
+	line-height:34px;
+}
+.newslist .title {
+	float: left;
+	margin-left:38px;
+	margin-top: 58px;
+	font-size:18px;
+	font-family:SourceHanSansCN-Regular;
+	font-weight:400;
+	color:rgba(43,43,43,1);
+	line-height:34px;
+}
+.newslist .desc {
+	float: left;
+	margin-left:141px;
+	margin-top: 16px;
+	width:898px;
+	height:39px;
+	font-size:15px;
+	font-family:SourceHanSansCN-Regular;
+	font-weight:400;
+	color:rgba(153,153,153,1);
+	line-height:24px;
+}
+.newslist a {
+	width:1200px;
+	height:172px;
+	color:rgba(82,61,76,1);
+}
+.newslist a:hover {
+	color:rgba(82,61,76,1);
+	text-decoration: none;
+	background:url('../img/newsimg/choosed.jpg');
+}
+.news-content-btn {
+	margin-top: 60px;
+	height: 50px;
+}
+.news-content-btn a{
+	float: left;
+	width: 92px;
+	height: 48px;
+	margin-left: -72px;
+}
+.news-content-btn a.prevbtn {
+	width: 92px;
+	height: 48px;
+	background: red;
+}
+.news-content-btn a.nextbtn {
+	width: 92px;
+	height: 48px;
+	background: url('../img/newsimg/pageturnchoosed.png');
+}
+
+/*咨询详情样式*/
+.news-content-detail {
+	position: relative;
+}
+.news-content-detail .detail-title {
+	position: absolute;
+	margin-top: 80px;
+	text-align: center;
+	height:37px;
+	font-size:26px;
+	font-family:SourceHanSansCN-Regular;
+	font-weight:400;
+	color:rgba(82,61,76,1);
+	line-height:34px;
+}
+.news-content-detail .detail-author {
+	float: left;
+	margin-left: 50px;
+	margin-top: 200px;
+	width:100px;
+	height:20px;
+	font-size:14px;
+	font-family:SourceHanSansCN-Regular;
+	font-weight:400;
+	color:rgba(148,142,146,1);
+	line-height:34px;
+}
+.news-content-detail .detail-time {
+	float: left;
+	margin-left: 23px;
+	margin-top: 200px;
+	width:140px;
+	height:16px;
+	font-size:14px;
+	text-align: right;
+	font-family:SourceHanSansCN-Regular;
+	font-weight:400;
+	color:rgba(148,142,146,1);
+	line-height:34px;
+}
+.news-content-detail .detail-text a{
+	font-size:14px;
+	text-decoration-style: initial;
+	text-decoration: underline;
+    text-decoration-color: initial;
+}
+.news-content-detail .line {
+	position: absolute;
+	margin-top: 234px;
+	margin-left:50px;
+	width:1100px;
+	height:1px;
+	background:rgba(202,202,202,1);
+	border-radius:1px;
+}
+.news-content-detail .detail-text {
+	width:1100px;
+	margin-top: 286px;
+	margin-left: 60px; 
+	font-size: 1.5em;
+}
+
+
+/* 分页相关 */
+.pagelist {
+	margin-top: 100px;
+}
+
+

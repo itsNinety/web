@@ -1,0 +1,63 @@
+.feature-content .title {
+    float:left;
+    font-size:20px;
+    font-family:SourceHanSansCN-Regular;
+    font-weight:400;
+    color:rgba(43,43,43,1);
+    line-height: 36px;
+    margin-left: 118px;
+    margin-top: -40px;
+}
+.feature-content .text {
+    text-indent:2em;
+    width:966px;
+    font-size:16px;
+    margin-left:118px;
+    font-family:SourceHanSansCN-Regular;
+    font-weight:400;
+    color:rgba(108,108,108,1);
+    line-height:30px;
+}
+/* 游戏特色区域 */
+.content-feature .feature-part {
+    margin-top:60px;
+}
+.content-feature .leftImg{
+    float:left; 
+    margin-left:116px;
+}
+.content-feature .rightImg{
+    float:right; 
+    margin-right:174px;
+}
+.content-feature .leftContent{
+    float:left;
+    font-family: SimSun;
+    font-weight:bold;
+    margin-left:135px;
+}
+.content-feature .rightContent{
+    float:right;
+    font-family: SimSun;
+    font-weight:bold;
+    margin-right:194px;
+}
+.content-feature .feature-title{
+    width: 420px;
+    height: 38px;
+    font-size:20px;
+    font-family:SimSun;
+    font-weight:bold;
+    color:rgba(153,153,153,1);
+    line-height:30px;
+    border-bottom: 1px solid rgba(228,228,228,1);
+}
+.content-feature .feature-desc{
+    width:420px;
+    height:48px;
+    font-size:16px;
+    font-family:SimSun;
+    font-weight:bold;
+    color:rgba(153,153,153,1);
+    line-height:30px;
+}

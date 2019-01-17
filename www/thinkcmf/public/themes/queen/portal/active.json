@@ -1,0 +1,9 @@
+{
+    "name": "活动",
+    "action": "portal/Index/news",
+    "description": "活动页",
+    "order": 5.0,
+    "more": {
+        
+    }
+}

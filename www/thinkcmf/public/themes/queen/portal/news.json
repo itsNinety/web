@@ -1,0 +1,9 @@
+{
+    "name": "首页",
+    "action": "portal/Index/news",
+    "description": "新闻页",
+    "order": 5.0,
+    "more": {
+        
+    }
+}

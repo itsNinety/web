@@ -1,0 +1,105 @@
+<taglib name="app\portal\taglib\Portal"/>
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>兑换礼包-女皇陛下官方网站</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="__CDN__/public/assets/css/reset.css" />
+    <link rel="stylesheet" href="__CDN__/public/assets/css/common.css" />
+    <link rel="stylesheet" href="__CDN__/public/assets/css/news.css" />
+    <link rel="stylesheet" href="__CDN__/public/assets/css/gift.css" />
+
+    <link rel="shortcut icon" href="__CDN__/public/assets/img/icon.png">
+  </head>
+  <body>
+    <div class="box">
+      <!-- 公共头部 -->
+      <div class="public-header">
+        <div class="public-container">
+          <div class="header-logo">
+            <a href=""></a>
+          </div>
+          <ul class="header-nav">
+            <li><a href="index.html">官网首页</a></li>
+            <li><a href="{:url('portal/index/news')}" >新闻资讯</a></li>
+            <li><a href="{:url('portal/index/feature')}">游戏特色</a></li>
+            <li><a href="{:url('portal/picture/attendant')}">游戏图鉴</a></li>
+            <li><a href="{:url('portal/index/strategyActive')}" >游戏攻略</a></li>
+            <li><a href="{:url('portal/picture/attendant')}" style="color:rgba(202,101,152,1);">兑换礼包</a></li>
+            <li style="border:none; margin-top: -16px;">
+              <a href="">
+                <div class="unopen-title">玩家社区</div>
+                <span class="unopen">【敬请期待】</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 头图区 -->
+      <div class="news-banner-bg"></div>
+
+      <!-- 内容区 -->
+      <div class="news-content public-container">
+        <div class="news-content-logo">
+          <img src="__CDN__/public/assets/img/newsimg/news-content-logo.png" style="float: left; margin-top: 40px; margin-left: 24px;">
+          <img src="__CDN__/public/assets/img/newsimg/news-content-arrow.png" style="float: left; margin-top: 52px; margin-left: 24px;">
+          <span style="float: left; margin-top: 40px; margin-left: 24px;font-size:28px;font-family:SourceHanSansCN-Regular;font-weight:400;color:rgba(255,113,153,1);">礼包兑换</span>
+          <div style="clear:both; line-height:0px; font-size:0px;"></div>
+        </div>
+        <div class="gift-content">
+            <div style="color:rgba(153,153,153,1);">请陛下选择领取奖励的角色所在平台、输入角色的ID（游戏内点击主页头像后的界面可查询）、输入兑换码，点击确认后，重新进入游戏即可在邮件领取奖励啦~</div>
+            <div class="gift-content-border" style="margin-top:30px;">
+                <div class="border-text border-text-plat">请选择领取奖励账号所在平台</div>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <div class="arrow"></div>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li id ="dropdown-click">QQ空间玩吧小游戏</li>
+                        <li id ="dropdown-click">微信小游戏</li>
+                        <li id ="dropdown-click">4399小游戏</li>
+                        <li id ="dropdown-click">248小游戏</li>
+                        <li id ="dropdown-click">小米游戏空间</li>
+                    </ul>
+                </div>
+            </div>
+            <div>   
+                <input type="text" class="gift-content-border" placeholder="请输入游戏ID">
+                <div class="wrongtip">陛下，您是不是输错啦...</div>
+            </div>
+            <div>
+                <input type="text" class="gift-content-border" placeholder="请输入兑换码">
+                <div class="wrongtip">兑换码已经失效啦</div>
+            </div>
+            <div style="width:145px;height:50px;background:rgba(192,177,123,1); margin:0 auto; margin-top:93px;font-size:18px;font-family:SimSun;font-weight:bold;color:rgba(255,255,255,1); padding-top: 12px;">确认兑换</div>
+        </div>
+      </div>
+
+      <!-- 尾部区 -->
+      <include file="public@footer"></include>
+    </div>
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="__CDN__/public/assets/js/common.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      $(function(){
+          $(".btn").dropdown();
+      });
+    </script>
+
+    <script>
+        $('.dropdown-menu').on('click','#dropdown-click', function() {
+            plat = $(this).text();
+            $('.border-text-plat').html(plat);
+        });
+    </script>
+  </body>
+</html>

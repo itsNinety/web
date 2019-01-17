@@ -1,0 +1,9 @@
+{
+    "name": "侍从图鉴",
+    "action": "portal/Picture/attendant",
+    "description": "侍从图鉴页",
+    "order": 5.0,
+    "more": {
+        
+    }
+}

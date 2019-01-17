@@ -1,0 +1,510 @@
+/*头部*/
+.public-header .header-nav a.pictures {
+  background: url("../img/header/checked/pictures.png") 30px 20px no-repeat,
+              url('../img/header/choosedline.jpg') 10px 85px no-repeat;
+}
+
+/*头图区*/
+.news-banner-bg {
+  	position: relative;
+  	margin: 0 auto;
+  	height: 686px;
+	width: 1920px;
+	width:100%;
+	background: url('../img/newsimg/news-banner-bg.jpg') no-repeat;
+	background-position: 50% 50%;
+	z-index: 1;
+	margin-top:-140px;
+}
+
+/*左侧浮窗：回到顶部*/
+.top-nav {
+	width: 70px;
+	height: 284px;
+	position: fixed;left: 42px;top: 490px;
+	z-index: 8;
+}
+
+/*导航区：侍从、血统、服装*/
+.pictures-content-nav {
+	margin-top: 42px;
+	margin-left:366px;
+	width:465px;
+	height:64px;
+	position: relative;
+	z-index: 10;
+	border:2px solid rgba(192,177,123,1);
+}
+.pictures-content-nav ul {
+	float: left;
+	margin-top: 5.5px;
+}
+.pictures-content-nav li {
+	width: 147px;
+	height: 50px;
+	float: left;
+	margin-left: 5px;
+	text-align: center;
+}
+.pictures-content-nav li a{
+	text-decoration: none;
+}
+.pictures-content-nav li:hover {
+	background: rgba(192,177,123,1);
+}
+
+/*血统图鉴内容区*/
+.pictures-content-list {
+	margin-top: 58px;
+	width: 1200px;
+}
+.pictures-content-list li {
+	width: 1200px;
+	height: 200px;
+	position: relative;
+	border:100px;
+	border-style: solid;
+	border-color: #fff;
+	/* border-image: url('../img/pictures/bloodchoose.png') 100; */
+}
+.pictures-content-list li:hover {
+	border-image: url('../img/pictures/bloodchoose.png') 100;
+}
+.pictures-content-list .circularmask {
+    width: 108px;
+    height: 112px;
+    border-radius: 50%;
+	position: absolute;
+	margin-left: -58px;
+	margin-top: -52px;
+	overflow: hidden;
+}
+.pictures-content-list .bloodframe {
+	position: absolute;
+	margin-left: -58px;
+	margin-top: -52px;
+	width: 132px;
+	height: 120px;
+	background: url('../img/pictures/bloodframe.png');
+	overflow: hidden;
+}
+.pictures-content-list .title {
+	position: absolute;
+	margin-left: 110px;
+	margin-top: -42px;
+	font-size:24px;
+	font-family:SourceHanSansCN-Regular;
+	font-weight:400;
+	color:rgba(82,61,76,1);
+	line-height:34px;
+}
+.pictures-content-list .description {
+	position: absolute;
+	margin-left: 110px;
+	margin-top: 6px;
+	font-size:18px;
+	text-align: left;
+	font-family:SourceHanSansCN-Regular;
+	font-weight:400;
+	color:rgba(148,142,146,1);
+	line-height:34px;
+}
+/*血统图鉴按钮*/
+.bloodbtn {
+	width: 1200px;
+	height: 200px;
+	background: #fff;
+	border: none;
+}
+
+/*侍从图鉴内容区*/
+.attendant-content-list {
+	margin-top: 76px;
+}
+.attendant-content-list .col {
+	margin-left: 76px;
+}
+.attendant-content-list .row-list {
+	text-decoration: 0.1s;
+	transition-property: transform;
+	float: left;
+	width: 276px;
+	height: 564px;
+}
+.attendant-content-list .row-list:hover {
+	transform:translateY(-30px);
+}
+.attendant-content-list .row-list .mask {
+    width: 203px;
+    height: 384px;
+	position: absolute;
+	margin-left: 8px;
+	margin-top: 24px;
+	overflow: hidden;
+}
+.attendant-content-list .row-list .pic {
+	float:left;
+	position:absolute;
+	max-width: 288px;
+	z-index: 3; 
+	margin-left:-50px;
+	bottom:-30px;
+}
+.attendant-content-list .row-list .name {
+	position: absolute;
+	z-index: 10;
+	float: left;
+	width:220px;
+	height:35px;
+	font-size:36px;
+	text-align: center;
+	margin-top: 420px;
+	font-family:SimSun;
+	font-weight:bold;
+	color:rgba(101,80,35,1);
+}
+.attendant-content-list .row-list .identity {
+	position: absolute;
+	z-index: 10;
+	float: left;
+	margin-top: 470px;
+	width:220px;
+	height:18px;
+	font-size:18px;
+	text-align: center;
+	font-family:SimSun;
+	font-weight:bold;
+	color:rgba(101,80,35,1);
+}
+/* 普通：绿    优秀：蓝   珍稀：粉   国士：黄 */
+.attendant-content-list .row-list .row-list-nation {
+	position: relative;
+	width: 220px;
+	height: 516px;
+	/* background: url('../img/pictures/baseplate-nation.jpg'); */
+}
+.attendant-content-list .row-list .row-list-rare {
+	position: relative;
+	width: 220px;
+	height: 516px;
+	background: url('../img/pictures/baseplate-rare.jpg');
+}
+.attendant-content-list .row-list .row-list-common {
+	position: relative;
+	width: 220px;
+	height: 516px;
+	background: url('../img/pictures/baseplate-common.jpg');
+}
+.attendant-content-list .row-list .row-list-outstanding {
+	position: relative;
+	width: 220px;
+	height: 516px;
+	background: url('../img/pictures/baseplate-outstanding.jpg');
+}
+
+/*服装图鉴内容区*/
+.clothing-content-list {
+	margin-top: 24px;
+}
+.clothing-content-list .col {
+	margin-left: 86px;
+}
+.clothing-content-list .row {
+}
+.clothing-content-list .row-list {
+	float: left;
+	width: 300px;
+	height: 900px;
+}
+
+/* 弹窗 */
+.modal {
+	width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.modal-dialog {
+	width: 1200px;
+	outline: none; 
+	padding: 0px;
+	box-shadow: none;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+	margin-left: -600px;
+	margin-top: -360px;
+}
+.modal-body {
+	width:1200px;
+	height:580px;
+	padding: 0px; 
+	margin: 0px;
+}
+.closeBtn {
+	width: 50px;
+	height:50px;
+	float: right;
+	border:none;
+	margin-top:-78px;
+	background:url('../img/pictures/closebtn.png');
+}
+.row-list-nation {
+	outline: none;
+	border: none;
+}
+.row-list-nation:focus,
+
+.row-list-nation:active:focus,
+
+.row-list-nation.active:focus,
+
+.row-list-nation.focus,
+
+.row-list-nation:active.focus,
+
+.row-list-nation.active.focus {
+    outline: none;          
+}
+/* 去掉button点击后篮框 */
+.closeBtn:focus,
+
+.closeBtn:active:focus,
+
+.closeBtn.active:focus,
+
+.closeBtn.focus,
+
+.closeBtn:active.focus,
+
+.closeBtn.active.focus {
+    outline: none;          
+}
+.bloodbtn:focus,
+
+.bloodbtn:active:focus,
+
+.bloodbtn.active:focus,
+
+.bloodbtn.focus,
+
+.bloodbtn:active.focus,
+
+.bloodbtn.active.focus {
+    outline: none;          
+}
+/* 侍从模态框 */
+.hero-content {
+	width: 1200px;
+	height:580px;
+	background:url('../img/pictures/attendantdetail.jpg')no-repeat;
+}
+
+.hero-content .headBg {
+	/* 头像底部白色*/
+	position: absolute;
+	margin-left:542px;
+	margin-top: -56px;
+	width: 120px;
+	height: 126px;
+    border-radius: 50%;
+	background:rgba(255,255,255,1);
+	overflow: hidden;
+}
+.hero-content .headframe {
+	/* 头像框 */
+	position: absolute;
+	margin-left:532px;
+	margin-top: -56px;
+	width: 141px;
+	height: 126px;
+	background: url('../img/pictures/headframe.png');
+	overflow: hidden;
+}
+.hero-content .circularmask {
+	/* 遮罩和头像 */
+	position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 0px solid rgba(0, 0, 0, .35);
+	border-radius: 50%;
+	margin-left:542px;
+	margin-top:-52px;
+	overflow: hidden;
+}
+.hero-content .logo {
+	float:right;
+	margin-top:30px;
+	/* margin-right: 40px; */
+	width:262px;
+	height:62px;
+	background: url('../img/index/logo.png') no-repeat;
+}
+.hero-content .text-content {
+	float:left;
+	width: 600px; 
+	height:430px; 
+	text-align: left; 
+	margin-left:510px; 
+	font-size:16px;
+	font-family:SourceHanSansCN-Regular;
+	font-weight:400;color:rgba(148,142,146,1);
+	line-height:24px;
+}
+.skinDesc {
+	width:46px; 
+	height:170px; 
+	background:rgba(170,141,99,1); 
+	float: left; 
+	margin-left:150px; 
+	margin-top:400px; 
+	position: relative; 
+	z-index: 10;
+	font-size:22px;
+	font-family: SimSun;
+	font-weight:normal;
+	color:rgba(255,255,255,1);
+	line-height: 22px;
+	padding-left: 12px;
+	padding-top: 40px;
+}
+.skinLeftarrow {
+	position: absolute; 
+	z-index: 10; 
+	margin-left:126px; 
+	margin-top: 280px;
+	-webkit-animation:leftmove 1s infinite;
+	-o-animation:leftmove 1s infinite;
+	animation:leftmove 1s infinite;
+}
+.skinRightarrow {
+	position: absolute; 
+	z-index: 10; 
+	margin-left:570px; 
+	margin-top: 280px;
+	-webkit-animation:rightmove 1s infinite;
+	-o-animation:rightmove 1s infinite;
+	animation:rightmove 1s infinite;
+}
+@-webkit-keyframes leftmove {
+	0%{
+		left:0;
+	}
+	50%{
+		left:-20px;
+	}
+	100%{
+		left:0;
+	}
+}
+@-webkit-keyframes rightmove{
+	0%{
+		left:0;
+	}
+	50%{
+		left:20px;
+	}
+	100%{
+		left:0;
+	}
+}
+
+/* 血统详情模态框 */
+.blood-content {
+	width: 1200px;
+	height:720px;
+	background:url('../img/pictures/blooddetail.jpg')no-repeat;
+}
+.blood-content .logo {
+	float:right;
+	margin-top:30px;
+	width:262px;
+	height:62px;
+	background: url('../img/index/logo.png') no-repeat;
+}
+
+/* 服装详情模态框 */
+.modal-content {
+	width:1200px;
+	height:680px;
+	position: relative;
+	background-color:rgba(0,0,0,0);
+	outline: 0;
+	-webkit-box-shadow: none;
+			box-shadow: none;
+}
+.modal-backdrop.in {
+	filter: alpha(opacity=50);
+	opacity: 0.6;
+}
+.cloth-content {
+	width:1200px;
+	height:680px;
+}
+.cloth-content .logo {
+	float:left;
+	position: absolute;
+	z-index: 10;
+	margin-top:14px;
+	margin-left:18px;
+	width:262px;
+	height:62px;
+	background: url('../img/index/logo.png') no-repeat;
+}
+.cloth-content .pic {
+	float: left;
+	position: absolute;
+	width:426px;
+	height: 620px;
+	margin-left:160px;
+	margin-top:-50px;
+}
+.cloth-content .cloth {
+	float:left;
+	width:476px;
+	height:622px;
+	margin-left: 590px;
+	margin-top: -50px;
+	border:4px solid rgba(192, 177, 123, 1);
+	background:rgba(255, 255, 255, 1);
+}
+.cloth-content .cloth-container{
+	margin-left:8px;
+	margin-top:6px;
+	width:450px;
+	height: 602px;
+	border:1px solid rgba(192, 177, 123, 1);
+	border-top:54px solid rgba(192, 177, 123, 1);
+}
+.cloth-content .clothPart  {
+	width:150px;
+	float:left;
+	margin-left:60px;
+	margin-top:30px;
+	margin-bottom: 50px;
+	vertical-align: middle;
+}
+.cloth-content .clothPart .partname {
+	display: block;
+	float: left;
+	width:22px;
+	height:110px;
+	background: url('../img/pictures/clothname.png') no-repeat;
+	background-size: 22px 110px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align: center;
+}
+.cloth-content .clothPart .partname .nametext {
+	width:22px;
+	font-size:13px;
+	font-family:SimSun;
+	font-weight:400;
+	color:rgba(255,255,255,1);
+	line-height:16px;
+}
+.cloth-content .clothPart .partpic {
+	float:left;
+}

@@ -1,0 +1,554 @@
+/*每条链接(其余地方不要再定义这三个属性以免冲突)*/
+.type {
+	float: left;
+	width:60px;
+	height:17px;
+	font-size:16px;
+	font-family:SourceHanSansCN-Regular;
+	font-weight:400;
+	color:rgba(82,61,76,1);
+	line-height:34px;
+}
+.type:hover, .f-info:hover{
+	color:rgba(255,113,153,1);
+}
+.index-strategyPanel .type:hover, .index-strategyPanel .f-info:hover {
+	color:rgba(255,113,153,1);
+}
+.f-info {
+	float: left;
+	width:400px;
+	height:17px;
+	font-size:1em;
+	font-family:SourceHanSansCN-Regular;
+	font-weight:400;
+	color:rgba(82,61,76,1);
+	line-height:34px;
+	text-align: left;
+}
+.fr {
+	float: left;
+	font-size:16px;
+	font-family:SourceHanSansCN-Regular;
+	font-weight:400;
+	color:rgba(82,61,76,1);
+	line-height:34px;
+	margin-left: 60px;
+}
+
+
+/*头图区*/
+.index-banner {
+  	width: 1920px;
+  	height: 724px;
+	background: url('../img/index/top.jpg') no-repeat;
+	width:100%; 
+	background-position:50% 50%;
+	margin: 0 auto;
+}
+
+/*热点活动新闻*/
+.index-panel-news {
+	width: 1200px;
+	height: 318px;
+	margin-top: 58px;
+	border:2px solid rgba(171, 189, 143, 1);
+}
+.index-panel-news .stretch {
+	width: 1198px;
+	height: 66px;
+	float: left;
+	border-top: 30px; 
+	border-bottom: 30px; 
+	border-left:300px;
+	border-right:300px;
+	border-style: solid;
+	-moz-border-image:url('../img/index/greenborder.jpg')30 300 30 300 fill stretch;
+	-webkit-border-image:url('../img/index/greenborder.jpg') 30 300 30 300 fill stretch;
+	-o-border-image:url('../img/index/greenborder.jpg')30 300 30 300 fill stretch;
+	border-image:url('../img/index/greenborder.jpg') 30 300 30 300 fill stretch;
+}
+.index-panel-news-flag {
+	float: left;
+	margin-top: -106px;
+	margin-left: 14px;
+	width: 51px;
+	height: 250px;
+	background: url('../img/index/flag.jpg');
+}
+.index-panel-news-flag .flag-text {
+	width:28px;
+	height:181px;
+	margin-left: 12px;
+	padding-top: 12px;
+	font-size:28px;
+	line-height: 30px;
+	font-family: SimSun;
+	font-weight:bold;
+	text-align: center;
+	color:rgba(101,80,35,1);
+}
+.index-panel-news .swiper-container {
+	float: left;
+	width: 526px;
+	height: 269px;
+	margin-top: -46px;
+}
+.index-panel-news .swiper-pagination {
+	height: 24px;
+	float: left;
+	padding-top: 5px;
+	padding-left: 14px;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 0px;
+}
+.swiper-pagination-bullet {
+	float: left;
+	width:24px;
+	height:24px;
+	opacity: 1;
+	background: url('../img/index/wpagination.png');
+}
+.swiper-pagination-bullet-active {
+	width:24px;
+	height:24px;
+	background: url('../img/index/ypagination.png');
+}
+.index-panel-news .tab-container {
+	float: right;
+	width: 583px;
+	height: 318px;
+	margin-top: -70px;
+}
+.index-panel-news .tab-container .nav {
+	margin-top: 20px;
+	margin-left: 30px;
+	border: none;
+}
+.index-panel-news .tab-container .nav li {
+	width: 124px;
+	font-size:20px;
+	text-align: center;
+	font-family:SimSun;
+	font-weight:400;
+	color:rgba(255,255,255,1);
+	line-height:34px;
+}
+.index-panel-news .tab-container .nav-tabs {
+	border: none;
+}
+.nav-tabs>li>a {
+	border-radius: 0px;
+}
+.index-panel-news .tab-container .active {
+	color:rgba(43,43,43,1);
+}
+.index-panel-news .tab-container .tab-content {
+	height: 252px;
+}
+.index-panel-news .tab-container .tab-content .tab-pane {
+	float: left;
+	width: 450px;
+	height: 194px;
+	margin-left: 30px;
+}
+.index-panel-news .tab-container .tab-content a {
+	font-size:16px;
+	font-family:SourceHanSansCN-Regular;
+	font-weight:400;
+	color:rgba(43,43,43,1);
+	line-height:34px;
+}
+.index-panel-news .tab-container .tab-content a .title {
+	float: left;
+	width: 370px;
+	text-align: left;
+}
+.index-panel-news .tab-container .tab-content a .time {
+	float: right;
+	margin-right: -60px;
+	color:rgba(153,153,153,1);
+}
+.index-panel-news .tab-container .tab-content li {
+	margin-top: 26px;
+	height: 16px;
+}
+.index-panel-news .tab-container .tab-content a:hover {
+	color:rgba(202,101,152,1);
+}
+
+
+/*上凰秘史卷宗*/
+.index-panel-history {
+	margin-top: 188px;
+	width:1200px;
+	height:320px;
+	background:rgba(255,255,255,1);
+	border:2px solid rgba(220,154,187,1);
+}
+.index-panel-history .stretch {
+	width: 1182px;
+	height: 92px;
+	margin-top: 110px;
+	margin-left: 9px;
+	border-top: 40px; 
+	border-bottom: 52px; 
+	border-left:300px;
+	border-right:300px;
+	border-style: solid;
+	-moz-border-image:url('../img/index/pinkborder.jpg')40 300 52 300 fill stretch;
+	-webkit-border-image:url('../img/index/pinkborder.jpg') 40 300 52 300 fill stretch;
+	-o-border-image:url('../img/index/pinkborder.jpg')40 300 52 300  fill stretch;
+	border-image:url('../img/index/pinkborder.jpg') 40 300 52 300  fill stretch;
+}
+.index-panel-history-flag {
+	float: left;
+	width: 51px;
+	height: 250px;
+	margin-top: -276px;
+	margin-left: 14px;
+	background: url('../img/index/flag.jpg');
+}
+.index-panel-history-flag .flag-text {
+	width:28px;
+	height:181px;
+	margin-left: 12px;
+	padding-top: 12px;
+	font-size:28px;
+	line-height: 30px;
+	font-family: SimSun;
+	font-weight:bold;
+	text-align: center;
+	color:rgba(101,80,35,1);
+}
+.index-panel-history .content {
+	float: left;
+	margin-left: 88px;
+	margin-top: -276px;
+}
+.index-panel-history .content li {
+	width: 368px;
+	float: left;
+}
+.index-panel-history .content .logolink {
+	width: 143px;
+	height: 30px;
+	float: right;
+	margin-right: 8px;
+	margin-top: -16px;
+	text-align: center;
+	text-decoration: none;
+	z-index: 10;
+	position: relative;
+	background:url('../img/index/logolink.png');
+	font-size:20px;
+	font-family:SimSun;
+	font-weight:bold;
+	color:rgba(43,43,43,1);
+}
+
+
+/*活动玩法攻略*/
+.index-panel-strategy {
+	width: 1200px;
+	height: 263px;
+	margin-top: 294px;
+	border:2px solid rgba(140,163,184,1);
+}
+.index-panel-strategy .stretch {
+	width: 1198px;
+	height: 87px;
+	margin-top: 10px;
+	border-top: 40px; 
+	border-bottom: 47px; 
+	border-left:300px;
+	border-right:300px;
+	border-style: solid;
+	-moz-border-image:url('../img/index/blueborder.jpg')40 300 47 300 fill stretch;
+	-webkit-border-image:url('../img/index/blueborder.jpg') 40 300 47 300 fill stretch;
+	-o-border-image:url('../img/index/blueborder.jpg')40 300 47 300 fill stretch;
+	border-image:url('../img/index/blueborder.jpg') 40 300 47 300 fill stretch;
+}
+.index-panel-strategy-flag {
+	float: left;
+	width: 51px;
+	height: 250px;
+	margin-top: -275px;
+	margin-left: 14px;
+	background: url('../img/index/flag.jpg');
+}
+.index-panel-strategy-flag .flag-text {
+	width:28px;
+	height:181px;
+	margin-left: 12px;
+	padding-top: 12px;
+	font-size:28px;
+	line-height: 30px;
+	font-family: SimSun;
+	font-weight:bold;
+	text-align: center;
+	color:rgba(101,80,35,1);
+}
+.index-panel-strategy .content-avtivepanel {
+	float: left;
+	width: 530px;
+	height: 251px;
+	margin-top: -275px;
+	margin-left: 88px;
+	background: url('../img/index/activestrategy.jpg');
+}
+.index-panel-strategy .content-growpanel {
+	float: left;
+	width: 530px;
+	height: 251px;
+	margin-top: -275px;
+	margin-left: 644px;
+	background: url('../img/index/growstrategy.jpg');
+}
+.index-panel-strategy .logolink {
+	float: right;
+	width: 143px;
+	height: 30px;
+	margin-top: 231px;
+	margin-right: -10px;
+	padding-top: 4px;
+	background: url(../img/index/logolink.png);
+	font-size:16px;
+	font-family:SimSun;
+	font-weight:bold;
+	color:rgba(24,13,11,1);
+}
+.index-panel-strategy .content-avtivepanel-panel {
+	width: 598px;
+	height: 166px;
+	float: left;
+}
+.index-panel-strategy .content-avtivepanel-panel .right-border {
+	position: absolute;
+	margin-top: 55px;
+	margin-left: 598px;
+	width:4px;
+	height:64px;
+	background:rgba(170,189,207,1);
+}
+.index-panel-strategy .content-avtivepanel-panel .contentlist {
+	width: 598px;
+	margin-top: 14px;
+	margin-left:-14px;
+	float: left;
+}
+.index-panel-strategy .content-avtivepanel-panel a {
+	font-size:15px;
+	line-height: 16px;
+	font-family:SourceHanSansCN-Regular;
+	font-weight:400;
+	color:rgba(43,43,43,1);
+	text-decoration: none;
+}
+.index-panel-strategy .content-avtivepanel-panel a:hover {
+	color:rgba(202,101,152,1);
+}
+.index-panel-strategy .content-avtivepanel-panel .title {
+	float: left;
+	width: 400px;
+	text-align: left;
+	margin-left: 46px;
+	margin-top: 24px;
+}
+.index-panel-strategy .content-avtivepanel-panel .time {
+	float: right;
+	margin-right: 64px;
+	color:rgba(153,153,153,1);
+	margin-top: 24px;
+}
+.index-panel-strategy .content-growpanel-panel {
+	float: right;
+	margin-top:-22px;
+}
+.index-panel-strategy .content-growpanel-panel .contentlist {
+	width: 598px;
+	float: left;
+	margin-top: 34px;
+}
+.index-panel-strategy .content-growpanel-panel a {
+	font-size:15px;
+	line-height: 16px;
+	font-family:SourceHanSansCN-Regular;
+	font-weight:400;
+	color:rgba(43,43,43,1);
+	text-decoration: none;
+}
+.index-panel-strategy .content-growpanel-panel a:hover {
+	color:rgba(202,101,152,1);
+}
+.index-panel-strategy .content-growpanel-panel .title {
+	float: left;
+	width: 400px;
+	text-align: left;
+	margin-left: 46px;
+	margin-top: 24px;
+}
+.index-panel-strategy .content-growpanel-panel .time {
+	float: right;
+	margin-right: 64px;
+	margin-top: 24px;
+	color:rgba(153,153,153,1);
+}
+
+/*游戏图鉴*/
+.index-panel-pictures {
+	margin-top: 220px;
+	width: 1200px;
+	height: 430px;
+	background: url('../img/index/picturebg.jpg');
+}
+.index-panel-pictures-flag {
+	float: left;
+	position: relative;
+	z-index: 10;
+	width: 51px;
+	height: 250px;
+	margin-top: -97px;
+	margin-left: 14px;
+	background: url('../img/index/flag.jpg');
+}
+.index-panel-pictures-flag .flag-text {
+	width:28px;
+	height:118px;
+	margin-left: 12px;
+	padding-top: 46px;
+	font-size:28px;
+	line-height: 30px;
+	font-family: SimSun;
+	font-weight:bold;
+	text-align: center;
+	color:rgba(101,80,35,1);
+}
+/*面板选项tab*/
+.tab-list {
+	float: left;
+	margin-left: 17px;
+	margin-top: -82px;
+	width: 467px;
+	height: 64px;
+	border:2px solid rgba(192,177,123,1);
+}
+.clickbtn {
+	background: none;
+	border: none;
+	margin-top: 4.5px;
+	width: 148px;
+	height: 50px;
+	text-align: center;
+	font-size:18px;
+	font-family:SimSun;
+	font-weight:bold;
+	color:rgba(24,13,11,1);
+	outline:none;
+}
+
+/* 面板显示内容 */
+.displaypanel {
+	width: 1200px;
+	height: 430px;
+	display: none;
+}
+
+.index-panel-pictures .logolink {
+	width:183px;
+	height:30px;
+	text-decoration: none;
+	background:rgba(255,255,255,1);
+	border:1px solid rgba(190,173,130,1);
+	float: right;
+	margin-right: 30px;
+	margin-top: -15px;
+	text-align: center;
+	z-index: 10;
+	position: relative;
+	font-size:20px;
+	font-family:SimSun;
+	font-weight:bold;
+	color:rgba(24,13,11,1);
+}
+
+/*游戏图鉴-侍从图鉴*/
+.tab-attendant-content {
+	float:left;
+	width: 600px; 
+	height:430px; 
+	text-align: left; 
+	margin-left:85px; 
+	font-size:18px;
+	font-family:SourceHanSansCN-Regular;
+	font-weight:400;color:rgba(148,142,146,1);
+	line-height:24px;
+}
+
+/*游戏图鉴--美人血统*/
+.tab-blood-content {
+	height: 430px;
+	margin-left: 100px;
+	padding-top: 10px;
+}
+.tab-blood-content .oneblood {
+	float: left;
+	width:132px;
+	height: 120px;
+	margin-left: 30px;
+	margin-top:48px;
+}
+.tab-blood-content .circularmask {
+	float: left;
+    width: 112px;
+    height: 112px;
+    border: 0px solid rgba(0, 0, 0, .35);
+    border-radius: 50%;
+	overflow: hidden;
+	background:#fff;
+}
+.tab-blood-content .bloodframe {
+	float: left;
+	width: 132px;
+	height: 120px;
+	margin-left: -124px;
+	background: url('../img/pictures/bloodframe.png');
+	overflow: hidden;
+}
+.oneblood .oneblood-name {
+	width: 61px;
+	height: 18px;
+	margin-left:20px;
+	margin-top:130px;
+	padding-top: 2px;
+	background:url('../img/index/xttjmcdi.png');
+	font-size:14px;
+	font-family:MicrosoftYaHei;
+	font-weight:400;
+	line-height: 14px;
+	color:rgba(148,142,146,1);
+}
+
+/*游戏图鉴-服装图鉴*/
+.tab-clothing-content {
+	height: 430px;
+	margin-left: 0px;
+	padding-top: 40px;
+}
+.tab-clothing-content li {
+	float: left;
+	margin-left: 10px;
+}
+
+/* 客服小哥 */
+.index-kefu {
+	margin-top:90px; 
+	width:620px; 
+	height:138px;
+	border: 10px;
+	border-style: solid;
+	-webkit-border-image:url('../img/index/download/plaste.png') 10 fill repeat repeat; /* Safari 5 */
+	-o-border-image:url('../img/index/download/plaste.png')10 fill repeat repeat; /* Opera */  
+	border-image:url('../img/index/download/plaste.png') 10 fill repeat repeat;
+}

@@ -1,0 +1,189 @@
+<taglib name="app\portal\taglib\Portal"/>
+
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>游戏图鉴-女皇陛下官方网站</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="__CDN__/public/assets/css/reset.css" />
+    <link rel="stylesheet" href="__CDN__/public/assets/css/common.css" />
+    <link rel="stylesheet" href="__CDN__/public/assets/css/news.css" />
+    <link rel="stylesheet" href="__CDN__/public/assets/css/pictures.css" />
+
+    <link rel="shortcut icon" href="__CDN__/public/assets/img/icon.png">
+  </head>
+  <body>
+    <div class="box">
+      <!-- 公共头部 -->
+      <div class="public-header">
+        <div class="public-container">
+          <div class="header-logo">
+            <a href=""></a>
+          </div>
+          <ul class="header-nav">
+            <li><a href="https://g3.hdyouxi.com">官网首页</a></li>
+            <li><a href="{:url('portal/index/news')}">新闻资讯</a></li>
+            <li><a href="{:url('portal/index/feature')}">游戏特色</a></li>
+            <li><a href="{:url('portal/picture/attendant')}" style="color:rgba(202,101,152,1);">游戏图鉴</a></li>
+            <li><a href="{:url('portal/index/strategyActive')}">游戏攻略</a></li>
+            <!-- <li><a href="{:url('portal/index/gift')}">兑换礼包</a></li> -->
+            <li style="border:none; margin-top: -16px;">
+                <a href="">
+                  <div class="unopen-title">兑换礼包</div>
+                  <span class="unopen">【敬请期待】</span>
+                </a>
+            </li>
+            <li style="border:none; margin-top: -16px;">
+              <a href="">
+                <div class="unopen-title">玩家社区</div>
+                <span class="unopen">【敬请期待】</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 左侧浮窗：回到顶部 -->
+      <!-- <div class="top-nav">
+        <a href="#top"><img src="__CDN__/public/assets/img/pictures/topbtn.jpg"></a>
+      </div> -->
+
+      <!-- 头图区 -->
+      <div class="news-banner-bg"></div>
+
+      <!-- 内容区 -->
+      <div class="news-content public-container">
+        <div class="news-content-logo">
+          <img src="__CDN__/public/assets/img/newsimg/news-content-logo.png" style="float: left; margin-top: 40px; margin-left: 96px;">
+          <img src="__CDN__/public/assets/img/newsimg/news-content-arrow.png" style="float: left; margin-top: 52px; margin-left: 40px;">
+          <span style="float: left; margin-top: 44px; margin-left:30px;font-size:22px;font-family:SourceHanSansCN-Regular;font-weight:400;color:rgba(255,113,153,1);">游戏图鉴</span>
+          <div style="clear:both; line-height:0px; font-size:0px;"></div>
+        </div>
+        <div class="pictures-content-nav">
+          <ul>
+            <li style="background: rgba(192,177,123,1)">
+              <a href="attendant.html">
+                <div style="font-size:24px;font-family:SimSun;font-weight:bold;color:rgba(255,255,255,1);margin-top: 7px;">侍从图鉴</div>
+              </a>
+            </li>
+            <li>
+              <a href="blood.html">
+                <div style="font-size:24px;font-family:SimSun;font-weight:bold;color:rgba(24,13,11,1);margin-top: 7px;">血统图鉴</div>
+              </a>
+            </li>
+            <li>
+              <a href="clothing.html">
+                <div style="font-size:24px;font-family:SimSun;font-weight:bold;color:rgba(24,13,11,1);margin-top: 7px;">服装图鉴</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="attendant-content-list">
+          <ul class="col">
+            <ul class="row">
+              <foreach name="heros" item="vo">
+                <li class="row-list">
+                    <!-- data-toggle="modal" data-target="#myModal" -->
+                    <button class="row-list-nation" onclick="query({$vo.hero_id})">
+                      <img src='__CDN__/public/assets/img/pictures/baseplate-rare.jpg'  class={$vo.talant} style="float:left; margin-top:1px;">                       
+                      <div class="mask">
+                        <img src=https://cdnh5.nibaguai.com/gong3/guanwang/lh181205/{$vo.skin1}.png class="pic cdnheropic">
+                      </div>
+                      <input type="url" id="heroURL" value={$vo.hero_id} style="display:none;">
+                      <div class="name">{$vo.name}</div>
+                      <div class="identity">{$vo.talant}侍从</div>    
+                    </button>
+                </li>
+              </foreach>
+            </ul>
+          </ul>
+          <div style="text-align:center; margin-top:100px;">
+              <div class="pagination">{$page}</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 侍从图鉴弹窗（scPopModal） -->
+      <div class="modal fade" id="scPopModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="margin-top: -290px;">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="closeBtn" data-dismiss="modal" aria-hidden="true"></button>
+                    <div class= "hero-content">
+                        <div class="headBg"></div>               
+                        <div class="circularmask">
+                            <img src="" id="hero-head" style="position:relative; width:120px;">
+                        </div>
+                        <div class="headframe"></div>
+                        <div class="logo"></div>
+                        <div class="text-content">
+                            <span style="font-size:30px; color:rgba(101,80,35,1); margin-top: 0px; float: left; font-family:SimSun;font-weight:bold;" id="popname"></span>
+                            <span style="font-size:18px; color:rgba(101,80,35,1); margin-top: 4px; float: left; margin-left: 26px; font-family:SimSun;font-weight:bold;" id="poptalant"></span>
+                            <div style="clear:both; height:24px; font-size:0px;"></div>
+                            <span style="float: left; font-size:16px; ">血统：</span>
+                            <span style="float: left; font-size:16px;" id="popculture"></span>
+                            <span style="float: left; font-size:16px; margin-left: 40px;">身份：</span>
+                            <span style="float: left;font-size:16px;" id="poporigin"></span>
+                            <span style="float: left; font-size:16px; margin-left: 40px;">喜好：</span>
+                            <span style="float: left;font-size:16px;" id="pophobby"></span>
+                            <span style="float: left;font-size:16px; margin-left: 40px;">战斗类型：</span>
+                            <span style="float: left;font-size:16px;" id="popbattle_type"></span>
+                            <div style="clear:both; line-height:0px; font-size:0px;"></div>
+                            <span style="float: left;font-size:16px; margin-top:17px;">传记：</span>
+                            <div id="popbiography" style="height:35px; font-size:16px;margin-top: 17px;"></div>
+                            <div style="clear:both; line-height:0px; font-size:0px;"></div>
+                            <div class="popskills" style="height:80px;">
+                                <div style="float:left;font-size:16px; margin-top:28px;">技能：</div>
+                                <ul style="float:left;" id="popskill_icons"></ul>
+                            </div>
+                            <div class="popfate">
+                                <img src="__CDN__/public/assets/img/pictures/scyf.png" style="float: left; margin-left:96px; margin-top: 30px;">
+                                <div style="clear:both;height:16px; line-height:0px; font-size:0px;"></div>
+                                <div id="popfate_lists"></div>
+                            </div>
+                        </div>
+                        <div class="heroSkin1" style="width:460px; float:left; height:580px; position:absolute; margin-top:-20px; display:block;">
+                          <!-- 若无皮肤，显示此区域 -->
+                          <img src="" class="popHeroPic1" style="float:left; width: 420px; position:absolute; bottom:0px; left:20px;">
+                        </div>
+                        <div class="heroSkin2" style="width:460px; float:left; height:580px; position:absolute; margin-top:-20px; margin-left:-112px; display:block;">
+                          <!-- 若有皮肤，显示此区域 -->
+                          <img src="" class="popHeroPic2" style="float:left; width: 620px; position:absolute; bottom:0px;">
+                          <div class="skinDesc" style=""></div>
+                          <img class='skinLeftarrow' src='__CDN__/public/assets/img/swiper/leftarrow.png' style="">
+                          <img class='skinRightarrow' src='__CDN__/public/assets/img/swiper/rightarrow.png' style="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- 尾部区 -->
+      <include file="public@footer"></include>
+    </div>
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="__CDN__/public/assets/js/common.js" type="text/javascript"></script>
+    <script src="__CDN__/public/assets/js/picture.js" type="text/javascript"></script>
+
+    <script>
+        var url_prx = '__CDN__/public/assets/img/'
+    </script>
+
+    <script>
+      $(function() {
+          $('.heroSkin1')[0].style.width = "420px";
+          $('.heroSkin2')[0].style.width = "620px";
+      })
+    </script>
+
+  </body>
+</html>
